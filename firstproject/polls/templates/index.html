@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
 {% if questions %}
 <ul>
     {% for q in questions %}

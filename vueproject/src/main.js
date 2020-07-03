@@ -9,6 +9,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import List from "./components/List";
 import Detail from "./components/Detail";
+import ListElementsByCategory from "./components/ListElementsByCategory";
+import ListElementsByType from "./components/ListElementsByType";
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
@@ -17,16 +19,18 @@ Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 const routes = [
-  {path: '/', component:List},
-  {path: '/detail/:id', component:Detail}
+    {path: '/', component:List},
+    {path: '/detail/:id', component:Detail},
+    {path: '/type/:id/elements', component:ListElementsByType},
+    {path: '/category/:id/elements', component:ListElementsByCategory},
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  routes
+    mode: 'history',
+    routes
 })
 
 new Vue({
-  router,
-  render: h => h(App),
+    router,
+    render: h => h(App),
 }).$mount('#app')

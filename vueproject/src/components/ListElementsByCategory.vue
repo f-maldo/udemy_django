@@ -1,5 +1,6 @@
 <template>
     <b-container>
+        <h1>Element list by category</h1>
         <ListDefault :elements-list="elements"></ListDefault>
     </b-container>
 </template>
@@ -8,27 +9,28 @@
     import ListDefault from "./partials/_ListDefault";
 
     export default {
-        name: "List",
-        components: {
+        name: "ListElementsByCategory",
+        components:{
             ListDefault
         },
         created() {
-            this.findAll()
+            this.findElementsByCategory();
         },
         data(){
             return {
-                elements: []
+                elements: [],
             };
         },
         methods: {
-            findAll: function () {
-                fetch("http://127.0.0.1:8000/api/element/?format=json")
+            findElementsByCategory: function () {
+                fetch("http://127.0.0.1:8000/api/category/" + this.$route.params.id + "/elements/?format=json")
                     .then(response => response.json())
-                    .then(response => this.elements = response)
+                    .then(response => this.elements = response);
             }
-        }
+        },
     }
 </script>
 
 <style scoped>
+
 </style>

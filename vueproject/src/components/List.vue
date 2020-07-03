@@ -1,11 +1,13 @@
 <template>
-    <div>
+    <b-container>
         <div v-for="e in elements" v-bind:key="e.id">
-            <b-card :title="e.title">
-                <b-card-text>{{e.description}}</b-card-text>
-            </b-card>
+            <router-link :to="'/detail/' + e.id">
+                <b-card :title="e.title">
+                    <b-card-text>{{e.description}}</b-card-text>
+                </b-card>
+            </router-link>
         </div>
-    </div>
+    </b-container>
 </template>
 
 <script>
@@ -30,8 +32,4 @@
 </script>
 
 <style scoped>
-    .box{
-        border: 3px solid lightgray;
-        margin: 5px 0 0 0;
-    }
 </style>

@@ -1,8 +1,8 @@
 <template>
-    <b-container>
+    <div>
         <h1>Element list by type</h1>
         <ListDefault :elements-list="elements"></ListDefault>
-    </b-container>
+    </div>
 </template>
 
 <script>
@@ -26,6 +26,11 @@
                 fetch("http://127.0.0.1:8000/api/type/" + this.$route.params.id + "/elements/?format=json")
                     .then(response => response.json())
                     .then(response => this.elements = response);
+            }
+        },
+        watch: {
+            "$route.params.id": function () {
+                this.findElementsByType();
             }
         },
     }

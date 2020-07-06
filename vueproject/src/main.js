@@ -19,10 +19,10 @@ Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 const routes = [
-    {path: '/', component:List},
-    {path: '/detail/:id', component:Detail},
-    {path: '/type/:id/elements', component:ListElementsByType},
-    {path: '/category/:id/elements', component:ListElementsByCategory},
+    {path: '/', component:List, name:'list'},
+    {path: '/detail/:id', component:Detail, name:'detail'},
+    {path: '/type/:id/elements', component:ListElementsByType, name:'ListElementsByType'},
+    {path: '/category/:id/elements', component:ListElementsByCategory, name:'ListElementsByCategory'},
 ]
 
 const router = new VueRouter({

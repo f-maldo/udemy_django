@@ -1,10 +1,9 @@
 <template>
     <div>
+        <h5>Types</h5>
         <b-list-group>
             <div v-for="t in types" v-bind:key="t.id">
-                <b-list-group-item button>
-                    <router-link to="'/type/' + t.id + '/elements'">{{t.title}}</router-link>
-                </b-list-group-item>
+                <b-list-group-item :to="'/type/' + t.id + '/elements'">{{t.title}}</b-list-group-item>
             </div>
         </b-list-group>
     </div>

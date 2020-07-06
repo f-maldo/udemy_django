@@ -1,7 +1,7 @@
 <template>
-    <b-container>
+    <div>
         <ListDefault :elements-list="elements"></ListDefault>
-    </b-container>
+    </div>
 </template>
 
 <script>
@@ -26,7 +26,7 @@
                     .then(response => response.json())
                     .then(response => this.elements = response)
             }
-        }
+        },
     }
 </script>
 

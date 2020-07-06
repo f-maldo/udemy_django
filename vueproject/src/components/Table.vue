@@ -1,7 +1,7 @@
 <template>
-    <b-container>
+    <div>
         <b-table striped hover :items="elements" :fields="fields"></b-table>
-    </b-container>
+    </div>
 </template>
 
 <script>

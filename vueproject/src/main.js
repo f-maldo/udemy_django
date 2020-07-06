@@ -18,7 +18,7 @@ Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
-const routes = [
+    const routes = [
     {path: '/', component:List, name:'list'},
     {path: '/detail/:id', component:Detail, name:'detail'},
     {path: '/type/:id/elements', component:ListElementsByType, name:'ListElementsByType'},

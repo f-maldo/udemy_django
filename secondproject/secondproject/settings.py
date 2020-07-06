@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'listelement.apps.ListelementConfig',
     'rest_framework',
     'corsheaders',
+    'comment.apps.CommentConfig',
 ]
 
 MIDDLEWARE = [

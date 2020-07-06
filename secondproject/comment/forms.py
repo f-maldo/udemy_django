@@ -1,16 +1,15 @@
-from django.forms import ModelForm
+from django import forms
 from .models import Comment
 
 
-class CommentForm(ModelForm):
+class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ["text"]
-        """widgets = {
-            'text': TextInput(attrs={
-                'class': 'form-input'
-            })
-        }
-        def __init__(self, *args, **kwargs):
-            super.__init__(*args, **kwargs)
-            super.fields['text'].widgets.attrs.update({'class': 'form-input'})"""
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(initial='Some name...', required=True)
+    last_name = forms.CharField(initial='Some last name...', required=True)
+    phone = forms.RegexField(regex='\(\w{3}\)\w{8}')
+    birth_date = forms.DateField()

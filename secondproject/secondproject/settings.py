@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'listelement.apps.ListelementConfig',
+    'comment.apps.CommentConfig',
+    'bootstrapform',
     'rest_framework',
     'corsheaders',
-    'comment.apps.CommentConfig',
 ]
 
 MIDDLEWARE = [

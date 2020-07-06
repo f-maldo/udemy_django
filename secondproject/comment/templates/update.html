@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="{% url 'add' %}" method="post">
+    <form action="{% url 'update' comment.id%}" method="post">
         {% csrf_token %}
         {{ form.text }}
         <input type="submit" value="Enviar">

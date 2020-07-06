@@ -12,6 +12,7 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django-cors-headers = "*"
+django-bootstrap-form = "*"
 
 [requires]
 python_version = "3.8"

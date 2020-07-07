@@ -13,6 +13,7 @@ markdown = "*"
 django-filter = "*"
 django-cors-headers = "*"
 django-bootstrap-form = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"

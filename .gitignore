@@ -436,3 +436,6 @@ docs/_book
 test/
 
 # End of https://www.toptal.com/developers/gitignore/api/vue,linux,python,django,pycharm+all,jupyternotebooks,node
+
+# Personal exclusions
+/secondproject/uploads/

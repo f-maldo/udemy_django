@@ -33,6 +33,11 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:8080",
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100,
+}
+
 
 # Application definition
 

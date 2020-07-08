@@ -1,9 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <table class="table table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th>Comment</th>
+        <th>Date posted</th>
+    </tr>
+    </thead>
+    <tbody>
     {% for c in comments %}
-        <div>
-            <p>{{ c.text }}</p>
-        </div>
+        <tr>
+            <td>{{ c.text }}</td>
+            <td>{{ c.date_posted|date:"D d/m/Y"  }}</td>
+        </tr>
     {% endfor %}
+
+    </tbody>
+    </table>
 {% endblock %}

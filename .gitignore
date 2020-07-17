@@ -46,7 +46,7 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
+#  Usually these files are written by a python script from a templates
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
@@ -145,7 +145,7 @@ dmypy.json
 .pytype/
 
 ### JupyterNotebooks ###
-# gitignore template for Jupyter Notebooks
+# gitignore templates for Jupyter Notebooks
 # website: http://jupyter.org/
 
 */.ipynb_checkpoints/*
@@ -373,7 +373,7 @@ modules.xml
 # Distribution / packaging
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
+#  Usually these files are written by a python script from a templates
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 
 # Installer logs
@@ -425,9 +425,9 @@ modules.xml
 # pytype static type analyzer
 
 ### Vue ###
-# gitignore template for Vue.js projects
+# gitignore templates for Vue.js projects
 #
-# Recommended template: Node.gitignore
+# Recommended templates: Node.gitignore
 
 # TODO: where does this rule come from?
 docs/_book
